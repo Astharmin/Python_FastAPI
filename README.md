@@ -23,9 +23,9 @@ El contenido está organizado en módulos que cubren todo el espectro del desarr
 
 | Módulo | Estado | Descripción |
 | :--- | :--- | :--- |
-| **1. 🧱 Fundamentos y primeros pasos** | 🔜 **Próximamente** | Configuración inicial, rutas básicas, métodos HTTP (GET, POST, PUT, DELETE), y el poder de la documentación automática con Swagger UI. |
-| **2. 📦 Gestión de Datos y Validación** | 🔜 **Próximamente** | Uso de **Pydantic** para la validación de datos, creación de esquemas, manejo de diferentes tipos de datos y respuestas personalizadas. |
-| **3. 🗄️ Integración con Bases de Datos** | 🔜 **Próximamente** | Conexión con bases de datos SQL (SQLAlchemy, Alembic) y NoSQL (MongoDB), creación de CRUDs completos y manejo de transacciones. |
+| **1. 🧱 Fundamentos y primeros pasos** | ✅ **Completado** | Configuración inicial, rutas básicas, métodos HTTP (GET, POST, PUT, DELETE), y el poder de la documentación automática con Swagger UI. |
+| **2. 📦 Gestión de Datos y Validación** | ✅ **Completado** | Uso de **Pydantic** para la validación de datos, creación de esquemas, manejo de diferentes tipos de datos y respuestas personalizadas. |
+| **3. 🗄️ Integración con Bases de Datos** | ✅ **Completado** | Conexión con bases de datos SQL (SQLAlchemy, Alembic) y NoSQL (MongoDB), creación de CRUDs completos y manejo de transacciones. |
 | **4. 👤 Autenticación y Autorización** | 🔜 **Próximamente** | Implementación de seguridad con **OAuth2**, manejo de JWT (JSON Web Tokens), protección de rutas y gestión de usuarios y permisos. |
 | **5. 📁 Archivos y Recursos** | 🔜 **Próximamente** | Subida y descarga de archivos, manejo de imágenes y otros recursos estáticos. |
 | **6. 🧩 Estructura Avanzada** | 🔜 **Próximamente** | Organización de proyectos a gran escala con **Dependencias**, **APIRouter** para versionado y modularización. |
@@ -34,31 +34,6 @@ El contenido está organizado en módulos que cubren todo el espectro del desarr
 | **9. 🚀 Orquestación con Docker** | 🔜 **Próximamente** | Creación de contenedores Docker para la API y sus dependencias, y orquestación de múltiples servicios (API, DB, Redis, Celery) con Docker Compose. |
 | **10. 📡 WebSockets** | 🔜 **Próximamente** | Implementación de comunicación en tiempo real para funcionalidades como chats, notificaciones o actualizaciones en vivo. |
 | **11. 🧪 Testing y Calidad** | 🔜 **Próximamente** | Escritura de pruebas unitarias y de integración con **Pytest** para asegurar la robustez y fiabilidad de la API. |
-
----
-
-## 🗂️ Estructura del Proyecto (Plantilla)
-
-```text
-Python_FastAPI/
-├── app/                           # Código principal de la aplicación
-│   ├── __init__.py
-│   ├── main.py                   # Punto de entrada de la API
-│   ├── models/                   # Definición de modelos de datos (SQLAlchemy)
-│   ├── schemas/                  # Esquemas de validación (Pydantic)
-│   ├── crud.py                   # Operaciones CRUD para la BD
-│   ├── database.py               # Configuración de la base de datos
-│   ├── dependencies.py           # Dependencias para inyección
-│   ├── routers/                  # Organización de rutas con APIRouter
-│   ├── services/                 # Lógica de negocio compleja
-│   └── utils/                    # Utilidades y helpers
-├── tests/                        # Pruebas unitarias y de integración
-├── .env                          # Variables de entorno
-├── requirements.txt              # Dependencias del proyecto
-├── Dockerfile                    # Para contenerización
-├── docker-compose.yml            # Orquestación de servicios
-└── README.md                     # Este archivo
-```
 
 ---
 
